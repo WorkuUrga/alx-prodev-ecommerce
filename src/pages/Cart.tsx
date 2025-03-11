@@ -9,7 +9,7 @@ interface Product {
 
 interface CartProps {
   cartItems: Product[];
-  removeFromCart: (id: number) => void;  // Function to remove an item from the cart
+  removeFromCart: (id: number) => void;  
 }
 
 const Cart: React.FC<CartProps> = ({ cartItems, removeFromCart }) => {

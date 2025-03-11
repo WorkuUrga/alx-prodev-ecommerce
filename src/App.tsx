@@ -7,14 +7,7 @@ import Products from "./components/ProductList";
 import About from "./pages/About";
 import Footer from './components/Footer';
 import Contact from "./pages/Contact";
-
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  category: string;
-  image: string;
-}
+import { Product } from "./interface";
 
 const App: React.FC = () => {
   const [cart, setCart] = useState<Product[]>([]);
